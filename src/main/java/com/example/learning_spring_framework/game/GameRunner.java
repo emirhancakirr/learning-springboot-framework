@@ -1,15 +1,15 @@
 package com.example.learning_spring_framework.game;
 
 public class GameRunner {
-    private SuperContraGame game;
-    public GameRunner(SuperContraGame game) {
-        this.game = game;
+    private GameConsole gameConsole;
+    public GameRunner(GameConsole game) {
+        this.gameConsole = game;
     }
 
     public void run(){
-        game.up();
-        game.left();
-        game.right();
-        game.down();
+        gameConsole.up();
+        gameConsole.left();
+        gameConsole.right();
+        gameConsole.down();
     }
 }
