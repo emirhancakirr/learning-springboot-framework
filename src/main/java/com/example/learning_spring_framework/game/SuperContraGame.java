@@ -1,5 +1,9 @@
 package com.example.learning_spring_framework.game;
 
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.stereotype.Component;
+
+@Component
 public class SuperContraGame implements GameConsole {
     public void up(){
         System.out.println("SuperContra up");
