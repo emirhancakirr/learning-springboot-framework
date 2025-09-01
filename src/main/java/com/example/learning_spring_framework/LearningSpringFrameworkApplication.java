@@ -1,14 +1,10 @@
 package com.example.learning_spring_framework;
 
+import com.example.learning_spring_framework.enterprise.example.web.MyWebController;
 import com.example.learning_spring_framework.game.GameRunner;
-import com.example.learning_spring_framework.game.MarioGame;
-import com.example.learning_spring_framework.game.Pacman;
-import com.example.learning_spring_framework.game.SuperContraGame;
-import org.springframework.boot.ConfigurableBootstrapContext;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.
-		context.ConfigurableApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 
 @SpringBootApplication
 public class LearningSpringFrameworkApplication {
@@ -21,6 +17,9 @@ public class LearningSpringFrameworkApplication {
 
 		GameRunner runner = context.getBean(GameRunner.class);
 		runner.run();
+
+		MyWebController controller = context.getBean(MyWebController.class);
+		System.out.println(controller.returnValueFromBussinesService());
 		
 	}
 
