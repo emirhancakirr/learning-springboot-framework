@@ -1,6 +1,8 @@
 package com.example.learning_spring_framework.game;
 
-//@Component
+import org.springframework.stereotype.Component;
+
+@Component
 public class MarioGame implements GameConsole {
 
     public void up(){

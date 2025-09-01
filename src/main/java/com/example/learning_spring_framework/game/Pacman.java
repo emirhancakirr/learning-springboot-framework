@@ -1,6 +1,10 @@
 package com.example.learning_spring_framework.game;
 
-//@Component
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class Pacman implements GameConsole{
     public void up(){
         System.out.println("Pacman up");
